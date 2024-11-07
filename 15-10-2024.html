@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+Event Daligation    
+</body>
+<script>
+    
+    let div = document.createElement("div");
+    div.textContent = "Div"; 
+    div.id = "parent-div"; 
+    document.body.appendChild(div); 
+
+    
+    let button = document.createElement("button");
+    button.textContent = "Submit"; 
+    button.id = "btn";
+
+ 
+    let para1 = document.createElement("p");
+    paragraph.textContent = "para1"; 
+    paragraph.id = "para1"; 
+
+    let para2 = document.createElement("p");
+    paragraph.textContent = "para2"; 
+    paragraph.id = "para2"; 
+
+    
+    div.appendChild(para1);
+    div.appendChild(para2);
+    div.appendChild(button);
+    function.getElementById("parent").addEvenetListener("click",
+    function(Event)
+    {
+        if(event.target.tagname == "Button")
+    {
+        alert(event.target.innerHTML+"was clicked");
+    }
+    if(event.target.tagname == "p1"){
+        event.target.style.color = "blue";
+
+    }
+});
+    
+</script>
+
+</html>
